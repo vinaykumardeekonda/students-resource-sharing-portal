@@ -41,7 +41,7 @@ export const uploadResource = async (req, res) => {
       isProject: isProject === 'true',
       projectFolder: folderName || null,
       files: uploadedFiles,
-      status: 'draft',
+      status: 'pending',
     });
 
     await newResource.save();
